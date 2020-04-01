@@ -1,6 +1,7 @@
 package com.githang.android.snippet.adapter;
 
 import android.content.Context;
+import android.util.Log;
 import android.util.SparseArray;
 import android.view.View;
 import android.view.ViewGroup;
@@ -31,6 +32,7 @@ public class ChoiceListAdapter<T, H extends ChoiceListAdapter.AbstractChoiceView
     public ChoiceListAdapter(List<T> data, ItemCreator<T, H> creator) {
         mData = data;
         mItemCreator = creator;
+        Log.v("ChoiceListAdapter", "ChoiceListAdapter");
     }
 
     @Override
